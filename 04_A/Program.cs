@@ -1,10 +1,14 @@
-﻿var output = 0;
+﻿using _04_A;
+
+var output = 0;
 var filePath = @"..\..\..\input.txt";
 var file = File.ReadAllLines(filePath);
 
 //
 
+var pairs = AssignmentsA.GetPairs(file);
 
+output = AssignmentsA.GetFullyOverlappingPairs(pairs).Count;
 
 //
 
