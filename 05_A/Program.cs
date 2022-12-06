@@ -1,10 +1,14 @@
-﻿var output = 0;
+﻿using _05_A;
+
+var output = "";
 var filePath = @"..\..\..\input.txt";
 var file = File.ReadAllLines(filePath);
 
 //
 
-
+var crates = new Crates(file);
+crates.RearrangeCrates();
+output = crates.GetTopCrates();
 
 //
 
