@@ -1,10 +1,14 @@
-﻿var output = 0;
+﻿using _06_A;
+
+var output = 0;
 var filePath = @"..\..\..\input.txt";
 var file = File.ReadAllLines(filePath);
 
 //
 
+var markers = new Markers(file);
 
+output = markers.GetProcessedCharactersCount(4);
 
 //
 
