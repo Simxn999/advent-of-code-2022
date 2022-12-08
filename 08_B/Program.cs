@@ -1,10 +1,14 @@
-﻿var output = 0;
+﻿using _08_B;
+
+var output = 0;
 var filePath = @"..\..\..\input.txt";
 var file = File.ReadAllLines(filePath);
 
 //
 
+var trees = new Trees(file);
 
+output = trees.GetHighestScenicScore();
 
 //
 
